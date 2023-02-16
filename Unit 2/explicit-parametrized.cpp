@@ -18,7 +18,7 @@ void Example::display()
 }
 int main()
 {
-    Example E=Example(10,20);
+    Example E=Example(10,20);       // explicit 
     E.display();
     return(0);
 }
