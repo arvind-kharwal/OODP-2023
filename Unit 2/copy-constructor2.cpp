@@ -4,6 +4,10 @@ class Example
 {
         int a,b;
     public:
+        Example()
+        {
+
+        }
         Example(int,int);
         void display();
 };
@@ -14,11 +18,14 @@ Example::Example(int x,int y)
 }
 void Example::display()
 {
-    cout<<a<<b;
+    cout<<a<<" "<<b<<endl;
 }
 int main()
 {
-    Example E(10,20);       // implicit 
-    E.display();
+    Example E1(10,20);
+    E1.display();
+    Example E2;
+    E2 = E1;
+    E2.display();
     return(0);
 }
