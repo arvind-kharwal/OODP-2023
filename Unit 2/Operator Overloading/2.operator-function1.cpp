@@ -12,7 +12,7 @@ public:
         Example E;
         E.a = a + E1.a;
         E.b = b + E1.b;
-        return (E);
+        return(E);
     }
 };
 

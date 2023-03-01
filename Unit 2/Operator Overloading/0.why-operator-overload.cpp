@@ -32,6 +32,7 @@ int main()
     A.display();
     B.getdata(100, 200);
     B.display();
+    //R = A+B;
     R = A.sum(B);
     R.display();
     return (0);
