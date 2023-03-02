@@ -11,11 +11,12 @@ class Parent
             b = y;
         }
 };
-class Child:public Parent
+class Child:protected Parent
 {
     public:
         void show()
         {
+            getdata(10,34);
             cout<<"\nThe show for protected: "<<a<<" "<<b<<endl;
         }
 };
@@ -23,7 +24,6 @@ class Child:public Parent
 int  main()
 {
     Child C1;
-    C1.getdata(10,20);
     C1.show();
     return(0);
 }
