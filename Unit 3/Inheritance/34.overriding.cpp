@@ -15,15 +15,14 @@ public:
 class B : public A
 {
 public:
-    void f1()
-    {
-        cout << "f1 from class B" << endl;
-    }
+    // void f1()
+    // {
+    //     cout << "f1 from class B" << endl;
+    // }
     void f2(int x)
     {
         cout << "f2 from class B" << endl;
-        cout << "\n"
-             << x << endl;
+        cout << "\n"<< x << endl;
     }
 };
 int main()
@@ -31,5 +30,6 @@ int main()
     B B1;
     B1.f1();
     B1.f2(4);
+    //B1.f2();
     return (0);
 }
