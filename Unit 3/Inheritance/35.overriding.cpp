@@ -29,6 +29,6 @@ int main()
 {
     B B1;
     B1.f1();
-    // B1.f2();    // Error, no matching function for call to 'B::f2()'
+    B1.f2(5);    // Error, no matching function for call to 'B::f2()'
     return (0);
 }
