@@ -4,33 +4,28 @@ class Example
 {
     int a,b;
     public:
-        Example()
-        {
-            cout<<"Default Constructor from Example Class"<<endl;
-        }
         Example(int x,int y)
         {
+            cout<<"Parametrized Constructor from Example Class"<<endl;
             a = x;
             b = y;
+            cout<<a<<" "<<b<<endl;
         }
 };
 class Test:public Example
 {
     int c,d;
     public:
-        Test(int x,int y)
+        Test(int x,int y):Example(x,y)
         {
+            cout<<"Parametrized Constructor from Test Class"<<endl;
             c = x;
             d = y;
-        }
-        void display()
-        {
             cout<<c<<" "<<d<<endl;
         }
 };
 int main()
 {
-    Test T1=Test(10,20);
-    T1.display();
+    Test T1(100,44);
     return(0);
 }
