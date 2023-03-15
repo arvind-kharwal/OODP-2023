@@ -11,9 +11,12 @@ class Example
 };
 class Test:public Example
 {
+    int c,d;
+    public:
+        Test(int x,int y)
+        {
+            c = x;
+            d = y;
+        }
+
 };
-int main()
-{
-    Test T1;
-    return(0);
-}
