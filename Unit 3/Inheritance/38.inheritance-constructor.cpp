@@ -2,19 +2,15 @@
 using namespace std;
 class Example
 {
+    int a,b;
     public:
         Example()
         {
-            cout<<"Constructor from Example Class"<<endl;
+            cout<<"Default Constructor from Example Class"<<endl;
         }
 };
 class Test:public Example
 {
-    public:
-        Test()
-        {
-            cout<<"Constructor from Test Class"<<endl;
-        }
 };
 int main()
 {
