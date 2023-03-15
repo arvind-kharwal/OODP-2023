@@ -2,11 +2,14 @@
 using namespace std;
 class Example
 {
+    int a,b;
     public:
-        Example()
-        {
-            cout<<"Default Constructor from Example Class"<<endl;
-        }
+        // Example(int x,int y)
+        // {
+        //     cout<<"Default Constructor from Example Class"<<endl;
+        //     a = x;
+        //     b = y;
+        // }
 };
 class Test:public Example
 {

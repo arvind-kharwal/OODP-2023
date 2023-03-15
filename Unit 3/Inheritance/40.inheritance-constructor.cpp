@@ -8,12 +8,12 @@ class Example
         {
             cout<<"Default Constructor from Example Class"<<endl;
         }
-        // Example(int x,int y)
-        // {
-        //     cout<<"Constructor from Example Class"<<endl;
-        //     a = x;
-        //     b = y;
-        // }
+        Example(int x,int y)
+        {
+            cout<<"Constructor from Example Class"<<endl;
+            a = x;
+            b = y;
+        }
 };
 class Test:public Example
 {
