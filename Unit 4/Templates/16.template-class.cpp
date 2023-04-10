@@ -25,5 +25,9 @@ int main()
     Example<int> E1;
     E1.getdata(10, 34);
     E1.display();
+    cout<<"==========="<<endl;
+    Example<string> E2;
+    E2.getdata("Arvind","Kharwal");
+    E2.display();
     return (0);
 }
