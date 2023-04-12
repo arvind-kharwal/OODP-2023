@@ -1,40 +1,24 @@
 #include <iostream>
 using namespace std;
-class Example
+void fun()
 {
-    int a, b;
-
-public:
-    void getdata(int x, int y)
-    {
-        a = x;
-        b = y;
-    }
-    void divide()
-    {
-        if (b == 0)
-            throw 6;
-        else 
-        {
-            int r = a / b;
-            cout << "The division is: " << r << endl;
-        }
-    }
-};
+    throw(10);
+}
 int main()
 {
-    Example E;
-    int x, y;
-    cout << "Enter the numbers: " << endl;
-    cin >> x >> y;
-    E.getdata(x, y);
+    int i;
+    cout << "Enter the number: ";
+    cin >> i;
+    cout << "I am in main" << endl;
     try
     {
-        E.divide();
+        if (i == 3)
+            fun();
     }
     catch (int e)
     {
-        cout << "The division is not possible " << endl;
+        cout << "exception Handled" << endl;
     }
+    cout << "The End" << endl;
     return (0);
 }

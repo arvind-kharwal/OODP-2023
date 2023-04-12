@@ -1,40 +1,20 @@
 #include <iostream>
 using namespace std;
-class Example
-{
-    int a, b;
-
-public:
-    void getdata(int x, int y)
-    {
-        a = x;
-        b = y;
-        if (b == 0)
-        {
-            throw 6;
-        }
-    }
-    void divide()
-    {
-
-        int r = a / b;
-        cout << "The division is: " << r << endl;
-    }
-};
 int main()
 {
-    Example E;
-    int x, y;
+    int a, b;
     cout << "Enter the numbers: " << endl;
-    cin >> x >> y;
+    cin >> a >> b;
     try
     {
-        E.getdata(x, y);
+        if (b == 0)
+            throw(10);
+        else
+            cout << "The division is: " << a / b;
     }
     catch (int e)
     {
-        cout << "The division is not possible " << endl;
+        cout << "Division is not possible" << endl;
     }
-    E.divide();
     return (0);
 }
