@@ -13,11 +13,12 @@ public:
     void divide()
     {
         if (b == 0)
-        {
             throw 6;
+        else 
+        {
+            int r = a / b;
+            cout << "The division is: " << r << endl;
         }
-        int r = a / b;
-        cout << "The division is: " << r << endl;
     }
 };
 int main()

@@ -11,9 +11,9 @@ int main()
         cout << "I am in Try" << endl;
         if (i == 1)
             throw 1;
-        if (i == 2)
+        else if (i == 2)
             throw 2;
-        if (i == 3)
+        else if (i == 3)
             throw 3;
     }
     catch (int e)
