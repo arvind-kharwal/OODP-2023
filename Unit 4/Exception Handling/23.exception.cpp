@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-class demo1 {
+class Example1 {
 };
 
-class demo2 {
+class Example2 {
 };
 
 int main()
@@ -14,16 +14,16 @@ int main()
     cin>>i;
     try  
     {
-	    if (i == 1)
-			throw demo1();
+	if (i == 1)
+			throw Example1();
 		else
-			throw demo2();
+			throw Example2();
 	}
-	catch (demo1 d1) 
+	catch (Example1 E1) 
     {
 		cout << "Caught exception of demo1 class \n";
     }
-	catch (demo2 d2) 
+	catch (Example2 E2) 
     {
 		cout << "Caught exception of demo2 class \n";
 	}
