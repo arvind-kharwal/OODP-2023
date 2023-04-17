@@ -1,19 +1,31 @@
 #include <iostream>
 using namespace std;
 
-class demo
-{
+class Example1 {
+};
 
+class Example2 {
 };
 
 int main()
 {
-	try
-	{
-		throw demo();
+    int i;
+    cout<<"Enter the number: ";
+    cin>>i;
+    try  
+    {
+	if (i == 1)
+			throw Example1();
+		else
+			throw Example2();
 	}
-	catch (demo d)
-	{
-		cout << "Caught exception of demo class \n";
+	catch (Example1 E1) 
+    {
+		cout << "Caught exception of demo1 class \n";
+    }
+	catch (Example2 E2) 
+    {
+		cout << "Caught exception of demo2 class \n";
 	}
+    return(0);
 }

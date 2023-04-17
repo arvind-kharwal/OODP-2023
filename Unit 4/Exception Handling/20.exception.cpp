@@ -1,32 +1,35 @@
-#include <iostream>  
-#include <exception>  
-using namespace std;  
-class MyException : public exception{  
-    public:  
-        const char * what() const throw()  
-        {  
-            return "Attempted to divide by zero!\n";  
-        }  
-};  
-int main()  
-{  
-    try  
-    {  
-        int x, y;  
-        cout << "Enter the two numbers : \n";  
-        cin >> x >> y;  
-        if (y == 0)  
-        {  
-            MyException z;  
-            throw z;  
-        }  
-        else  
-        {  
-            cout << "x / y = " << x/y << endl;  
-        }  
-    }  
-    catch(exception& e)  
-    {  
-        cout << e.what();  
-    }  
-}  
+#include<iostream>
+#include<exception>
+using namespace std;
+class Example:public exception
+{
+    public:
+        void display()
+        {
+            cout<<"Division not possible!"<<endl;
+        }
+
+};
+int main()
+{
+    int a,b;
+    cout<<"Enter the two numbers: ";
+    cin>>a>>b;
+    try
+    {
+        if(b==0)
+        {
+            Example E1;
+            throw(E1);
+        }
+        else
+        {
+            cout<<"The division is: "<<a/b<<endl;
+        }
+    }
+    catch (Example E)
+    {
+        E.display();
+    }
+    return(0);
+}
