@@ -3,12 +3,10 @@
 using namespace std;
 int main()
 {
-    vector<int> v(13);
+    vector<int> v={1,2,3,4,5};
     vector<int>::iterator i,j;
     i = v.begin();
-    j = v.end();
-    int k = distance(i,j);
-    cout<<k;
-    //cout<<distance(i,j)<<endl;
+    j = next(i);
+    cout<<*j<<endl;
     return(0);
 }
