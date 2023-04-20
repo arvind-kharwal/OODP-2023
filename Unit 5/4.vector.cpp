@@ -1,12 +1,15 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 int main()
 {
-    vector<int> V(12);
-    vector<int>::iterator i,j;
-    i = V.begin();
-    j = V.end();
-    cout<<distance(i,j)<<endl;
-    return(0);    
+    vector<int> v;
+    vector<int>::iterator i;
+    for(int i=0;i<5;i++)
+    {
+        v.push_back(i);
+    }
+    for(i=v.begin();i!=v.end();i++)
+        cout<<*i<<endl;
+    return(0);
 }

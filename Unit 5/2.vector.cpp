@@ -1,14 +1,16 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 int main()
 {
-    vector<int> V = {1,2,3,4,5,6,7,8,9,10};
-    vector<int>::iterator i;
-    i = V.begin();
-    advance(i,5);
-    cout<<*i<<endl;
-    advance(i,-2);
-    cout<<*i<<endl;
-
+    vector<int> v;
+    for(int i=0;i<5;i++)
+    {
+        v.push_back(i);
+    }
+    for(int i:v)
+    {
+        cout<<i<<endl;
+    }
+    return(0);
 }
