@@ -10,7 +10,7 @@ int main()
         cout << *i << " ";
     }
     v.clear();
-    cout << "After Clear" << endl;
+    cout << "\nAfter Clear" << endl;
     for (i = v.begin(); i != v.end(); i++)
     {
         cout << *i << " ";
