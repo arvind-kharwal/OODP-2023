@@ -10,5 +10,8 @@ int main()
     cout<<*i<<endl;
     advance(i,-2);
     cout<<*i<<endl;
+    i = V.end();
+    advance(i,-2);
+    cout<<*i<<endl;
 
 }
