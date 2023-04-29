@@ -13,7 +13,7 @@ int main()
     multimap<int,int>::iterator i,j;
     for(i=M.begin();i!=M.end();i++)
         cout<<(*i).first<<":"<<(*i).second<<endl;
-    M.erase(M.begin(),M.find(3));
+    M.erase(M.begin(),M.find(3)); // The M after removal of elements less than key=3 is 
     cout<<"\n After erasing "<<endl;
     for(i=M.begin();i!=M.end();i++)
         cout<<(*i).first<<":"<<(*i).second<<endl;
