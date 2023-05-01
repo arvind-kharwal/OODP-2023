@@ -13,7 +13,7 @@ int main()
     multimap<int,int>::iterator i,j;
     for(i=M.begin();i!=M.end();i++)
         cout<<(*i).first<<":"<<(*i).second<<endl;
-    cout<<"\n Print elements fro specific position "<<endl;
+    cout<<"\n Print elements from specific position "<<endl;
     for(i=M.find(3);i!=M.end();i++)
         cout<<(*i).first<<":"<<(*i).second<<endl;
     return(0);
