@@ -1,14 +1,15 @@
-#include<iostream>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-#include<algorithm>
-#include<functional>
+#include <vector>
 int main()
 {
-    int a1[] = {10,24,42,64,90};
-    int a2[] = {2,4,6,8,10};
-    int res[5];
-    transform(a1,a1+5,a2,res,std::divides<int>());
-    for(int i=0;i<5;i++)
-        cout<<res[i]<<" ";
-    return(0);
+    vector<int> v1 = {1, 2, 3, 4, 5};
+    vector<int> v2 = {10, 20, 30, 40, 50};
+    vector<int> v;
+    transform(v1.begin(), v1.end(), v2.begin(), v1.begin(), plus<int>());
+    vector<int>::iterator i;
+    for (i = v1.begin(); i != v1.end(); i++)
+        cout << *i << " ";
+    return (0);
 }
