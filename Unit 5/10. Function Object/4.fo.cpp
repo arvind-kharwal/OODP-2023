@@ -1,21 +1,14 @@
-#include<iostream>
+#include <iostream>
+#include <functional>
+#include <algorithm>
 using namespace std;
-#include<algorithm>
-#include<functional>
-int increment(int x)
-{
-    x = x+1;
-    return(x);
-}
 int main()
 {
-    int a[] = {1,2,3,4};
-    int res[4];
-    for(int i=0;i<3;i++)
-        cout<<a[i]<<" ";
-    transform(a,a+4,res,increment);
-    cout<<"\nAfter Increment"<<endl;
-    for(int i=0;i<3;i++)
-        cout<<res[i]<<" ";
-    return(0);
+    int a[] = {1, 2, 3, 4, 5};
+    int b[] = {10, 20, 30, 40, 50};
+    int r[5];
+    transform(b, b + 5, a, r, divides<>());
+    for (int i = 0; i < 5; i++)
+        cout << r[i] << " ";
+    return (0);
 }
